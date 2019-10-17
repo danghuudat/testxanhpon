@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Auth;
 
-class LogedIn
+class AuthOrigin
 {
     /**
      * Handle an incoming request.
@@ -16,9 +16,12 @@ class LogedIn
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::guest()){
-            return redirect('login');
+        if (Auth::check()){
+            return $next($request);
+
         }
-        return $next($request);
+        return abort(401,'This action is unauthorized.');
+
+
     }
 }

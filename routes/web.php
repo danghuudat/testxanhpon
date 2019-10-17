@@ -14,9 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('login','LoginController@getLogin')->middleware('LogedIn');
+Route::get('login','LoginController@getLogin')->middleware('LogedOutgit ');
 Route::post('login','LoginController@postLogin');
-Route::group(['prefix'=>'xuongkhop'],function(){
+Route::group(['prefix'=>'xuongkhop','middleware'=>['LoggedIn','AuthOrigin']],function(){
     Route::get('/','AdminController@index');
     Route::get('/nguoidung','AdminController@indexNguoidung');
     Route::post('/add','AdminController@store');

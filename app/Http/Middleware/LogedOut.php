@@ -17,7 +17,7 @@ class LogedOut
     public function handle($request, Closure $next)
     {
         if (Auth::guest()) {
-            return redirect('login');
+            return redirect('admin');
         };
         // if(Auth::user()->level == 0){
         //     return back();
