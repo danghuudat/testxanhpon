@@ -13,7 +13,7 @@
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="img/favicon.html">
 
-    <title>Editable Table</title>
+    <title>Bệnh viên Saint Paul</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
@@ -80,7 +80,7 @@
             <!-- page start-->
             <section class="panel">
                 <header class="panel-heading">
-                    LỊCH PHẪU THUẬT KHOA GÂY MÊ HỒI SỨC
+                    LỊCH PHẪU THUẬT KHOA CHẤN THƯƠNG CHỈNH HÌNH
                 </header>
                 <div class="panel-body">
                     <div class="adv-table editable-table ">
@@ -92,6 +92,8 @@
 
                                 <button type="button" class="btn btn-danger" onclick="truncate()" style="margin-left: 20px">Xóa tất cả dữ liệu
                                     <i class="fa fa-trash-o"></i></button>
+                                <button type="button" class="btn btn-primary" onclick="chuyentrang()" style="margin-left: 20px">Chuyển sang trang quản lý quảng cáo
+                                </button>
 
                             </div>
                             <div style="margin-bottom: 20px">
@@ -415,6 +417,9 @@
                 location.reload();
 
             });
+    }
+    function chuyentrang() {
+        window.location.href="{{asset('xuongkhop/quangcao')}}";
     }
 
 </script>

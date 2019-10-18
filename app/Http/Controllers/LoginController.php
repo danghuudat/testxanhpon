@@ -13,7 +13,7 @@ class LoginController extends Controller
     public function postLogin(Request $request){
         \Log::info($request);
         if (Auth::attempt(['name' => $request->name, 'password' => $request->password])) {
-            return redirect('admin');
+            return redirect('xuongkhop');
         }
         else{
             return back()->with('loi','Sai tên tài khoản hoặc mật khẩu.');

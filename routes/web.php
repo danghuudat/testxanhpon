@@ -14,9 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('login','LoginController@getLogin')->middleware('LogedOutgit ');
+Route::get('login','LoginController@getLogin')->middleware('LogedOut');
 Route::post('login','LoginController@postLogin');
-Route::group(['prefix'=>'xuongkhop','middleware'=>['LoggedIn','AuthOrigin']],function(){
+Route::group(['prefix'=>'xuongkhop','middleware'=>['LogedIn','AuthOrigin']],function(){
     Route::get('/','AdminController@index');
     Route::get('/nguoidung','AdminController@indexNguoidung');
     Route::post('/add','AdminController@store');
@@ -24,6 +24,11 @@ Route::group(['prefix'=>'xuongkhop','middleware'=>['LoggedIn','AuthOrigin']],fun
     Route::post('/store','AdminController@store');
     Route::post('/delete','AdminController@destroy');
     Route::post('/update','AdminController@update');
+    Route::get('/quangcao','QuangCaoController@index');
+    Route::post('/quangcao/add','QuangCaoController@add');
+    Route::post('/quangcao/delete','QuangCaoController@delete');
+    Route::post('/quangcao/truncate','QuangCaoController@truncate');
+
 
 
 });
