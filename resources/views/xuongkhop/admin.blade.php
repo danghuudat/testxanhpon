@@ -97,7 +97,7 @@
 
                             </div>
                             <div style="margin-bottom: 20px">
-                                <form method="post" enctype="multipart/form-data" action="{{url('import')}}">
+                                <form method="post" enctype="multipart/form-data" action="{{url('xuongkhop/import')}}">
                                     <label for="import">Import file excel</label>
                                     <input type="file" id="import"  name="selectFile">
                                     <button type="submit" name="upload" value="upload" id="uploadBtn" class="btn btn-success" style="margin-top: 10px">Upload</button>
@@ -117,6 +117,7 @@
                                             <strong>    {{$message}}</strong>
                                         </div>
                                     @endif
+                                    <input type="hidden" value="{{ csrf_token() }}" name="_token">
                                 </form>
                             </div>
                         </div>

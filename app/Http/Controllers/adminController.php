@@ -74,18 +74,14 @@ class AdminController extends Controller
         if($data->count()>0){
             $insert_data=[];
             foreach($data->toArray()[0] as $key =>$value){
-                if (isset($value['stt'])){
+                if (isset($value['ten_tuoi'])){
                     $data3=array(
-                        'stt'=>$value['stt'],
-                        'tenbenhnhan'=>$value['hoten'],
-                        'tuoi'=>$value['tuoi'],
-                        'khoa'=>$value['khoa'],
-                        'chandoan'=>$value['chandoan'],
-                        'ppphauthuat'=>$value['ppphauthuat'],
-                        'bsphauthuat'=>$value['bsphauthuat'],
-                        'ppvocamvagiamdau'=>$value['ppvocam'],
-                        'bsgayme'=>$value['bsgayme'],
-                        'trangthaicuabenhnhan'=>$value['trangthai'],
+                        'tentuoi'=>$value['ten_tuoi'],
+                        'ppphauthuat'=>$value['phuong_phap_phau_thuat'],
+                        'ptv'=>$value['phau_thuat_vien'],
+                        'trangthai'=>$value['trang_thai'],
+                        'chandoan'=>$value['chan_doan'],
+
                     );
                     array_push($insert_data,$data3);
                 }

@@ -243,11 +243,14 @@
         }
     }
     function showadv(){
-        openNav();
-        var item = array_ads[Math.floor(Math.random()*array_ads.length)];
-        item=item.split("embed/");
-        onYouTubePlayerAPIReady(item[1]);
+        if(array_ads.length!=0){
+            openNav();
 
+            var item = array_ads[Math.floor(Math.random()*array_ads.length)];
+            var url = new URL(item);
+            var c = url.searchParams.get("v");
+            onYouTubePlayerAPIReady(c);
+        }
     }
     function playVideo() {
         player.playVideo();

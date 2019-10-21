@@ -11,7 +11,6 @@ class LoginController extends Controller
         return view('login');
     }
     public function postLogin(Request $request){
-        \Log::info($request);
         if (Auth::attempt(['name' => $request->name, 'password' => $request->password])) {
             return redirect('xuongkhop');
         }
