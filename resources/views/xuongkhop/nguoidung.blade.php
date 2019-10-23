@@ -161,7 +161,7 @@
 
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="{{asset('js/jquery.js')}}"></script>
-<script src="{{asset('http://www.youtube.com/player_api')}}"></script>
+<script src="http://www.youtube.com/player_api"></script>
 
 <script src="{{asset('js/jquery-ui-1.9.2.custom.min.js')}}"></script>
 <script src="{{asset('js/jquery-migrate-1.2.1.min.js')}}"></script>
