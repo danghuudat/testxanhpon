@@ -40,7 +40,8 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        LichMo::insert($request->all());
+
+        LichMo::insert(['tentuoi'=>$request->tentuoi,'ppphauthuat'=>$request->ppphauthuat,'ptv'=>$request->ptv,'trangthai'=>$request->trangthai,'chandoan'=>$request->chandoan]);
         return "ok";
     }
 

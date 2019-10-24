@@ -189,9 +189,53 @@
                 <label for="chandoan">Chẩn đoán:</label>
                 <input type="text" class="form-control" id="chandoan">
                 <label for="ppphauthuat">PP phẫu thuật:</label>
-                <input type="text" class="form-control" id="ppphauthuat">
+                <input type="text" class="form-control" id="ppphauthuat" list="pppt">
+                <datalist id="pppt">
+                    <option value="Kết hợp xương" >
+                    <option value="Nội soi tái tạo dây chằng">
+                    <option value="Nội soi sửa sụn chêm">
+                    <option value="Nội soi khâu gân chóp xoay">
+                    <option value="Nội soi làm vững khớp vai" >
+                    <option value="Xử lý vết thương phần mềm" >
+                    <option value="Thay khớp háng toàn phần" >
+                    <option value="Thay khớp háng bán phần">
+                    <option value="Tháo dụng cụ KHX" >
+                    <option value="Thay khớp gối" >
+                    <option value="Thay khớp vai" >
+                    <option value="Nội soi vận động khớp" >
+                    <option value="Nội soi cắt lọc MHD viêm" >
+                    <option value="Xử lý vết thương nhiễm khuẩn" >
+                    <option value="Rạch và dẫn lưu ổ apxe" >
+                    <option value="Cắt cụt chi tổn thương" >
+                </datalist>
                 <label for="bsphauthuat">Phẫu thuật viên:</label>
-                <input type="text" class="form-control" id="bsphauthuat">
+                <input type="text" class="form-control" id="bsphauthuat" list="ptv">
+                <datalist id="ptv">
+                    <option value="PGS. Dũng" >
+                    <option value="BS. Tuyến">
+                    <option value="BS. Bình">
+                    <option value="BS. Lâm">
+                    <option value="BS. Lương" >
+                    <option value="BS. Quỳnh" >
+                    <option value="BS. Đức" >
+                    <option value="BS. Phương">
+                    <option value="BS. Mạnh" >
+                    <option value="BS. Nam A" >
+                    <option value="BS. Nam B" >
+                    <option value="BS. Hiếu" >
+                    <option value="BS. Trình" >
+                    <option value="BS. Quyết" >
+                    <option value="BS. Hưng" >
+                    <option value="BS. Minh" >
+                    <option value="BS. Phong" >
+                    <option value="BS. Ban" >
+                    <option value="BS. Tùng" >
+                    <option value="BS. Chính" >
+                    <option value="BS. Viện" >
+                    <option value="BS. Toàn" >
+                    <option value="Chuyên gia được mời" >
+
+                </datalist>
                 <label for="status">Trạng thái của bệnh nhân:</label>
                 <input class="form-control" list="status2"  onchange="setColor('status')" name="status" id="status">
                 <datalist id="status2" >
@@ -235,9 +279,54 @@
                 <label for="chandoan2">Chẩn đoán:</label>
                 <input type="text" class="form-control" id="chandoan2">
                 <label for="ppphauthuat2">PP phẫu thuật:</label>
-                <input type="text" class="form-control" id="ppphauthuat2">
+                <input type="text" class="form-control" id="ppphauthuat2" list="pppt2">
+                <datalist id="pppt2">
+                    <option value="Kết hợp xương" >
+                    <option value="Nội soi tái tạo dây chằng">
+                    <option value="Nội soi sửa sụn chêm">
+                    <option value="Nội soi khâu gân chóp xoay">
+                    <option value="Nội soi làm vững khớp vai" >
+                    <option value="Xử lý vết thương phần mềm" >
+                    <option value="Thay khớp háng toàn phần" >
+                    <option value="Thay khớp háng bán phần">
+                    <option value="Tháo dụng cụ KHX" >
+                    <option value="Thay khớp gối" >
+                    <option value="Thay khớp vai" >
+                    <option value="Nội soi vận động khớp" >
+                    <option value="Nội soi cắt lọc MHD viêm" >
+                    <option value="Xử lý vết thương nhiễm khuẩn" >
+                    <option value="Rạch và dẫn lưu ổ apxe" >
+                    <option value="Cắt cụt chi tổn thương" >
+                </datalist>
                 <label for="bsphauthuat2">Phẫu thuật viên:</label>
-                <input type="text" class="form-control" id="bsphauthuat2">
+                <input type="text" class="form-control" id="bsphauthuat2" list="ptv2">
+                <datalist id="ptv2">
+                    <option value="PGS. Dũng" >
+                    <option value="BS. Tuyến">
+                    <option value="BS. Bình">
+                    <option value="BS. Lâm">
+                    <option value="BS. Lương" >
+                    <option value="BS. Quỳnh" >
+                    <option value="BS. Đức" >
+                    <option value="BS. Phương">
+                    <option value="BS. Mạnh" >
+                    <option value="BS. Nam A" >
+                    <option value="BS. Nam B" >
+                    <option value="BS. Hiếu" >
+                    <option value="BS. Trình" >
+                    <option value="BS. Quyết" >
+                    <option value="BS. Hưng" >
+                    <option value="BS. Minh" >
+                    <option value="BS. Phong" >
+                    <option value="BS. Ban" >
+                    <option value="BS. Tùng" >
+                    <option value="BS. Chính" >
+                    <option value="BS. Viện" >
+                    <option value="BS. Toàn" >
+                    <option value="Chuyên gia được mời" >
+
+                </datalist>
+
                 <label for="status3">Trạng thái của bệnh nhân:</label>
                 <input class="form-control" list="status2"  onchange='setColor("status3")' name="status" id="status3">
                 <datalist id="status2" >
